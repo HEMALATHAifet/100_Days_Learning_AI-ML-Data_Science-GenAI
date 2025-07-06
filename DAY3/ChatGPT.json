@@ -1,0 +1,12 @@
+{
+  "collaboration": {
+    "partners": ["OpenAI", "Microsoft"],
+    "project": "ChatGPT",
+    "action": "deployed"
+  },
+  "training": {
+    "model": "ChatGPT",
+    "data": "large-scale text datasets",
+    "method": "Reinforcement Learning from Human Feedback (RLHF)"
+  }
+}
