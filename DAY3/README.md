@@ -1,4 +1,4 @@
-## 📅 Day 3/ 100  - Convert English Sentence into Structured Formats
+## 📅 Day 3/ 100  - Convert Natural Language into Structured Formats
 
 ### 🧠 Skill of the Day:
 Today, I learned how to convert a simple English sentence into **structured formats** like:
