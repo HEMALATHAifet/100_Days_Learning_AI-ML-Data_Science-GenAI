@@ -142,4 +142,6 @@ This will return:
 > Visual representation of relationships between OpenAI, Microsoft, ChatGPT, RLHF, and data.
 ![Neo4j](https://github.com/user-attachments/assets/6285e6b7-f7c5-4d09-a22b-5caeff76390b)
 
+**Happy Coding!** 🚀
 ---
+
