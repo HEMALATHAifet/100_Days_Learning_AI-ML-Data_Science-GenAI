@@ -133,3 +133,20 @@ df_imputed = imputer.fit_transform(df)
 6. **Verify** that missing values are handled properly
 
 ---
+DATASET : (!https://www.kaggle.com/datasets/ahmedmohamed2003/cafe-sales-dirty-data-for-cleaning-training)
+The dataset has **10,000 rows and 8 columns**, with several missing and inconsistent values. Here's a breakdown of what needs cleaning:
+### 🧼 Cleaning Plan
+
+| Column             | Issues Detected                    | Action to Clean                      |
+| ------------------ | ---------------------------------- | ------------------------------------ |
+| `Item`             | 333 missing values                 | Fill with `"Unknown"`                |
+| `Quantity`         | 138 missing; data type is `object` | Convert to numeric, fill with median |
+| `Price Per Unit`   | 179 missing; type `object`         | Convert to float, fill with median   |
+| `Total Spent`      | 173 missing; has `ERROR`           | Replace "ERROR", then recalculate    |
+| `Payment Method`   | 2,579 missing; contains `UNKNOWN`  | Fill missing/UNKNOWN with mode       |
+| `Location`         | 3,265 missing; contains `UNKNOWN`  | Fill with `"Unknown"`                |
+| `Transaction Date` | 159 missing                        | Fill with forward fill or drop       |
+| `Transaction ID`   | No missing                         | ✅ No action                          |
+
+---
+
