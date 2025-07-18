@@ -97,6 +97,35 @@ print(get_sentiment_label(score))
 
 ---
 
+### 📊 VADER Sentiment Sensitivity Table
+
+| **Sentence Variation**                                                | **Negative (`neg`)** | **Neutral (`neu`)** | **Positive (`pos`)** | **Compound Score** |
+| --------------------------------------------------------------------- | -------------------- | ------------------- | -------------------- | ------------------ |
+| I love this product.                                                  | 0.00                 | 0.33                | 0.67                 | 0.6369             |
+| I **absolutely** love this product.                                   | 0.00                 | 0.22                | 0.78                 | 0.7351             |
+| I absolutely love this product!                                       | 0.00                 | 0.22                | 0.78                 | 0.7812             |
+| I absolutely love this product! It's fantastic.                       | 0.00                 | 0.19                | 0.81                 | 0.8481             |
+| I absolutely love this product! It's fantastic and worth every penny. | 0.00                 | 0.34                | 0.66                 | 0.875              |
+| I absolutely love this product!!!                                     | 0.00                 | 0.22                | 0.78                 | 0.8074             |
+| I like this product.                                                  | 0.00                 | 0.51                | 0.49                 | 0.3612             |
+| I don’t love this product.                                            | 0.33                 | 0.67                | 0.00                 | -0.296             |
+
+---
+
+### 📌 Explanation:
+
+* **Compound**: The overall sentiment score (-1 to +1)
+* Adding intensifiers like **“absolutely”** or **exclamation marks (!)**\* boosts positive sentiment.
+* Negative words like **“don’t”** flip the sentiment drastically.
+* VADER accounts for:
+
+  * **Punctuation** (!!! increases emotion)
+  * **Capitalization** (LOVE vs love)
+  * **Degree modifiers** (absolutely, very, kind of)
+  * **Contrastive conjunctions** (“but”, “however”)
+  * **Negations** (“not”, “don’t”)
+
+---
 ## 💡 7. What Else Can We Do with This Program?
 
 * 📁 Analyze reviews in bulk from a CSV file
