@@ -86,16 +86,10 @@ This confirms that all missing values have been handled.
 
 ---
 
-#### 7. **Outlier Detection using Box Plots**
+#### 7. **Outlier Detection using Histogram**
+📊 Visualizing BMI Distribution using histogram to see how BMI values are spread across the dataset. It shows how many people fall in each BMI range, helping to spot unusually high or low BMI values i.e., extreme values visually
 
-```python
-plt.figure(figsize=(10, 5))
-sns.boxplot(data=df[['BMI', 'Systolic BP', 'Diastolic']])
-plt.title('Box Plot for Outlier Detection')
-plt.show()
-```
-
-You are visually checking for **outliers** in the `BMI`, `Systolic BP`, and `Diastolic` columns using boxplots. Outliers show up as points outside the whiskers of the boxplot.
+(e.g., very high BMI > 50).
 
 ---
 
@@ -124,16 +118,6 @@ You are now ready to:
 
 * Perform **data exploration (DA)**
 * Or begin **preprocessing for machine learning (DS)** such as encoding and scaling
-
----
-## 📈 Visual Output
-
-* Boxplot for outlier detection
-
-```python
-sns.boxplot(data=df[['BMI', 'Systolic BP', 'Diastolic']])
-```
-
 ---
 
 ## 📂 Output File
