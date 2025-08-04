@@ -24,10 +24,14 @@ df.dropna(subset=['Risk Level'], inplace=True)
 # Check again
 print("Missing Values After Cleaning:\n", df.isnull().sum())
 
-# Outlier Detection – Box plots
-plt.figure(figsize=(10, 5))
-sns.boxplot(data=df[['BMI', 'Systolic BP', 'Diastolic']])
-plt.title('Box Plot for Outlier Detection')
+# Outlier Detection – HISTOGRAM
+# Plot histogram for BMI
+plt.figure(figsize=(8, 4))
+plt.hist(df['BMI'], bins=20, color='skyblue', edgecolor='black')
+plt.title('BMI Distribution')
+plt.xlabel('BMI')
+plt.ylabel('Frequency')
+plt.grid(True)
 plt.show()
 
 # Flag high BMI values for review
