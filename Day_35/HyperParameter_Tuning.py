@@ -49,14 +49,19 @@ print("✅ Best Parameters:", grid.best_params_)
 # ----------------------
 # Step 3: Evaluate Best Model
 # ----------------------
+from sklearn.metrics import classification_report
 
-best_model = grid.best_estimator_
-y_pred = best_model.predict(X_test)
+# Ensure all three labels are reported: 0 (High), 1 (Low), 2 (Mid)
+# Check your label mapping:
+print(le.classes_)  # Should be ['high', 'low', 'mid']
 
-print("\n📊 Classification Report:")
-print(classification_report(y_test, y_pred, target_names=le.classes_))
+# Map correctly
+label_order = [0, 1, 2]  # order matches encoded labels: ['high', 'low', 'mid']
+class_names = ['High', 'Low', 'Mid']  # Display names in same order
 
-print("🎯 Accuracy:", accuracy_score(y_test, y_pred))
+# Avoid error if some labels are missing in predictions
+print(classification_report(y_test, y_pred, labels=label_order, target_names=class_names, zero_division=0))
+
 
 # ----------------------
 # Step 4: Confusion Matrix
