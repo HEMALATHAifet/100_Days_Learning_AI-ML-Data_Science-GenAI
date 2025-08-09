@@ -26,6 +26,15 @@ print(df.describe())
 print("\nMissing Values:")
 print(df.isnull().sum())
 
+# Handle missing values
+# Drop rows where target (Risk Level) is missing
+df = df.dropna(subset=['Risk Level'])
+
+# Fill numeric NaNs with median
+numeric_cols = df.select_dtypes(include=['float64', 'int64']).columns
+df[numeric_cols] = df[numeric_cols].fillna(df[numeric_cols].median())
+
+
 # 5️⃣ Distribution of Risk Levels
 plt.figure(figsize=(6,4))
 sns.countplot(x="RiskLevel", data=df, palette="viridis")
