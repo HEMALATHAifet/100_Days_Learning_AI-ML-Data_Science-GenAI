@@ -1,4 +1,4 @@
-## ✅ **Storytelling from Your Visuals**
+## ✅ **DATA ANALYSIS -Storytelling from Your Visuals**
 
 ### 🎯 Goal:
 
@@ -57,5 +57,50 @@ To identify how key features like **BMI**, **Blood Sugar (BS)**, and **Systolic 
 > By visualizing BMI, Blood Sugar, and Systolic BP against Risk Level, we see a **consistent pattern**:
 > **Higher values in these features are associated with High Risk pregnancies.**
 > These insights are essential for **early screening**, **clinical awareness**, and building **predictive models**.
+
+---
+## **DATA SCIENCE - FINAL MODEL TRAINING**
+---
+
+Think of the model like a **very experienced doctor**.
+You gave this doctor a **set of health details** about a pregnant woman:
+
+* **Age** → 28 years
+* **Systolic BP** → 150 (this is high)
+* **Diastolic BP** → 95 (also high)
+* **Blood Sugar (BS)** → 145 (above normal)
+* **Body Temperature** → 98.6°F (normal)
+* **BMI** → 36.5 (obese range)
+* **Previous Complications** → Yes (1 means yes)
+* **Preexisting Diabetes** → No
+* **Gestational Diabetes** → Yes (1 means yes)
+* **Mental Health Issues** → Yes
+* **Heart Rate** → 80 (normal)
+
+---
+
+Here’s what happened behind the scenes:
+
+1. **The model remembered patterns** from many real examples in its training data — it saw thousands of cases where certain combinations of blood pressure, sugar, BMI, and other factors led to either a "Low Risk" or a "High Risk" pregnancy.
+2. When you entered your details, the model compared them with all the cases it knows.
+3. In this example:
+
+   * High **Blood Pressure** (both numbers)
+   * High **BMI**
+   * High **Blood Sugar**
+   * Previous complications
+   * Gestational diabetes
+
+   These are all red flags in the medical world.
+4. Based on those warning signs, the model concluded: **"This pregnancy is high risk."**
+
+---
+
+💡 **Simple analogy:**
+It’s like a weather app predicting rain.
+
+* If the sky is dark, humidity is high, and there’s a history of rain with such conditions → it says *“Rain likely.”*
+* Here, instead of clouds and humidity, we have BMI, BP, sugar, and history.
+* The “rain” here is *“High risk”*.
 
 ---
