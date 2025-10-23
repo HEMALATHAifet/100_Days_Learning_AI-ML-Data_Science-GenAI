@@ -96,13 +96,5 @@ FROM employee;
 
 Each helps make SQL projects cleaner, faster, and easier to maintain.
 
----
-
-🧠 I’ve uploaded today’s practice code (Views, Procedures, Functions) to GitHub — check it out here 👇
-🔗 [https://github.com/YourUsername/SQL-Practice](https://github.com/YourUsername/SQL-Practice)
 
 #SQL #100DaysOfSQL #LearningJourney #Database #Views #StoredProcedures #Functions #Day52 #DataEngineering
-
----
-
-Would you like me to also give you **10 practice queries for Day 52** (creating, altering, executing views/procedures/functions) with sample output like before (for GitHub upload)?
