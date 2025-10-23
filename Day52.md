@@ -1,9 +1,4 @@
-Perfect progression 🔥 — **Day 52** is a big step up because you’re entering the **SQL programming layer**:
-👉 *Views, Stored Procedures, and User-Defined Functions* — these make SQL powerful, reusable, and cleaner.
 
-Here’s a complete **LinkedIn Day 52 post idea** with educational + engaging tone (you can post it directly 👇):
-
----
 
 ## 🧠 **Day 52 of My SQL Learning Journey – Views, Procedures & Functions!**
 
