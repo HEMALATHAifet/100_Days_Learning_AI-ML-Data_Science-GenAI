@@ -1,7 +1,3 @@
-Perfect ✅ — since your **Day 51 topics** cover **NULL handling, string, date/time, numeric functions, and CASE expressions**, here’s a complete, interview-friendly SQL practice set of **20 queries** (with sample outputs) based on the classic **EMPLOYEE** and **DEPARTMENT** tables.
-
----
-
 ### 🧩 **Tables Used**
 
 **EMPLOYEE**
