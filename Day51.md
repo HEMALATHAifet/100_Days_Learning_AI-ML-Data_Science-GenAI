@@ -257,5 +257,3 @@ JOIN DEPARTMENT D ON E.DEPTNO = D.DEPTNO;
 
 ---
 
-Would you like me to create a **downloadable SQL file (`Day51_SQL_Practice.sql`)** with all these queries (ready to execute in Oracle/MySQL/PostgreSQL)?
-I can generate and share it instantly.
