@@ -1,6 +1,3 @@
-Here’s a clean, professional **GitHub README.md** file you can use for your **Day 53 SQL Learning Journey (Constraints, Normalization & Transactions)** 👇
-
----
 
 ````markdown
 # 🧠 Day 53 – SQL Learning Journey  
