@@ -113,9 +113,3 @@ Part of my **100 Days of SQL Learning Journey** 🚀
 #SQL #DatabaseDesign #Constraints #Normalization #Transactions #SQLLearning #PrimaryKey #ForeignKey #Commit #Rollback #DataIntegrity #SQLPractice #LearningJourney #GitHubProjects
 
 ```
-
----
-
-Would you like me to include **sample query results (INSERT + SELECT output)** in this README, like your previous Day 51 format?  
-That will make it more demonstrative for recruiters or GitHub visitors.
-```
