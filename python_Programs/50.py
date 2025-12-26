@@ -1,4 +1,4 @@
-#print product of digits
+# print product of digits
 num=int(input("enter a number: "))
 out=1
 while num!=0:
